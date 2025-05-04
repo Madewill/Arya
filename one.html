@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Arya</title>
+
+    <style>
+        #fullscreen-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.85);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          pointer-events: none;
+        }
+      
+        #fullscreen-overlay.show {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      
+        #fullscreen-overlay img {
+          max-width: 90%;
+          max-height: 90%;
+          object-fit: contain;
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+          transition: transform 0.3s ease;
+        }
+      
+        .hidden {
+          display: none;
+        }
+      </style>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favii.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favii.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="favii.svg">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner width-sixteen-col">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/arya.svg" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                   
+                    <ul class="s-header__menu-links">
+                        <li><a href="about.html">About</a></li>
+                        <li ><a href="services.html">Services</a></li>
+                        <li class="current"><a href="blog.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+
+                    <div class="s-header__contact">
+                        <a href="contact.html" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>                        
+                    </div> <!-- s-header__contact -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site main content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+               <section class="s-pageheader pageheader">
+                    <div class="row">
+                        <div class="column xl-12">
+                            <h1 class="page-title">
+                                <span class="page-title__small-type text-pretitle">My Portfolio</span>
+                                Featured Projects 
+                            </h1>
+                        </div>
+                    </div>
+               </section>   
+
+               <section class="s-pagecontent pagecontent">
+
+                    <div class="row">
+                        <div class="column xl-12 grid-block">          
+        
+                            <!-- <div class="grid-full">         -->
+                                <div class="grid-full grid-list-items">
+
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Duskmire</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/14.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/14.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Thornveil</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/3.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/3.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Venomblood</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/39.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/39.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Ghostwrought</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/47.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/47.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Nightborne</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/43.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/43.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Soulbrand</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/20.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/20.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Blightmane</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/28.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/28.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Darkreign</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/42.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/42.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Glimmerfang</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/37.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/37.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Vilethorn</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/25.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/25.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Runewatcher</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/30.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/30.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+                                    <div class="grid-list-items__item blog-card" style="overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 0;">
+
+                                        <!-- Category and Title -->
+                                        <div class="blog-card__header">
+                                            <div class="blog-card__cat-links">
+                                                <a href="character-designs.html">Character Design</a>
+                                            </div>
+                                            <h3 class="blog-card__title"><a href="#">Bonechant</a></h3>
+                                        </div>
+                                    
+                                        <!-- Character Image instead of paragraph -->
+                                        <div class="blog-card__image" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+                                            <img src="folio/15.jpg" alt="Eldritch Warrior Design" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;">
+                                        </div>
+
+                                        <div id="fullscreen-overlay" class="hidden">
+                                            <img id="fullscreen-img" src="folio/15.jpg" alt="Fullscreen Artwork" />
+                                        </div>
+                                    
+                                    </div> <!-- end blog-card -->
+        
+                                </div> <!-- grid-list-items -->
+                            <!-- </div>     -->
+
+                        </div> <!-- end grid-block-->
+                    </div> <!-- end row -->
+
+                    <!-- pagination -->
+                    <div class="row navigation pagination">
+                        <div class="column xl-12">
+                            <nav class="pgn">
+                                <ul>
+                                    <li>
+                                        <a class="pgn__prev" href="blog.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"/></svg>
+                                        </a>
+                                    </li>
+                                    <li><a class="pgn__num" href="blog.html">1</a></li>
+                                    <li><a class="pgn__num current" href="one.html">2</a></li>
+                                    <li><a class="pgn__num " href="two.html">3</a></li>
+                                    <li><a class="pgn__num" href="three.html">4</a></li>
+                                    <li>
+                                        <a class="pgn__next" href="two.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div> <!-- end column -->
+                    </div> <!-- end pagination -->
+
+               </section>
+
+        </section> <!-- s-content-->
+
+        <!-- # cta
+        ================================================== -->
+        <section id="cta" class="s-cta">
+
+            <div class="row row-x-center text-center">
+                <div class="column xl-8 lg-12">
+        
+                    <div class="s-cta__content">
+                        <h2 class="text-display-title">
+                            Bring Your Characters to Life.
+                        </h2>
+                        <p class="lead">
+                            Whether it’s for games, branding, or storytelling—let’s create something unforgettable. I specialize in expressive, stylized characters that connect with audiences and make brands stand out.
+                        </p>
+                        <a href="contact.html" class="btn btn--primary">Start a Project</a>
+                    </div>
+        
+                </div>
+            </div>
+        
+        </section>
+    
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row s-footer__content">
+                <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">                    
+                    <h3>About Arya</h3>
+                    <p>
+                        Arya is a passionate artist specializing in comic arts, character design, and 3D character modeling. With a keen eye for detail and a flair for storytelling, Arya brings characters to life through vibrant designs and immersive 3D models. Whether it's creating unique comic characters or crafting expressive 3D models for digital experiences, Arya blends creativity and technical skill to deliver art that tells a story.
+                    </p>               
+                </div>                
+                <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
+                    <h3>Site Links</h3>
+                    <ul class="link-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="column xl-3 lg-6 md-12 tab-12 s-footer__block s-footer__newsletter">
+                    <h3>Newsletter</h3>
+        
+                    <p>
+                        Stay ahead with the latest trends in 3D design and development. Subscribe to our newsletter for updates on our latest projects, tutorials, and tips for creating dynamic 3D web experiences.
+                    </p>
+        
+                    <div class="subscribe-form">
+                        <form id="mc-form" class="mc-form">
+                            <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" required>
+                            <input type="submit" name="subscribe" value="Subscribe" class="btn btn--primary btn--small u-fullwidth">
+                            <div class="mc-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <!-- Social links remain unchanged -->
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- end page-wrap -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const cards = document.querySelectorAll('.blog-card');
+          const overlay = document.getElementById('fullscreen-overlay');
+          const fullscreenImg = document.getElementById('fullscreen-img');
+      
+          cards.forEach(card => {
+            card.addEventListener('click', () => {
+              const imgSrc = card.querySelector('img').src;
+              fullscreenImg.src = imgSrc;
+              overlay.classList.remove('hidden');
+      
+              // Show overlay
+              setTimeout(() => {
+                overlay.classList.add('show');
+              }, 50); // Delay for transition
+      
+              // Hide after 1.5s
+              setTimeout(() => {
+                overlay.classList.remove('show');
+      
+                // Fully hide after fade out
+                setTimeout(() => {
+                  overlay.classList.add('hidden');
+                }, 500);
+              }, 1500);
+            });
+          });
+        });
+      </script>
+
+</body>
+</html>
